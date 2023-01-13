@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 
 const HeroesAddForm = () => {
-    const {filters, filtersLoadingStatus} = useSelector(state => state)
+    const {filters, filtersLoadingStatus} = useSelector(state => state.filters)
     const dispatch = useDispatch();
     const {request} = useHttp();
   
@@ -50,7 +50,7 @@ const HeroesAddForm = () => {
         }
         if (filters && filters.length > 0 ) {
             return filters.map(({name, el, id}) => {
-                if (el === 'all')  return;
+                if (el === 'all') return;
 
                 return <option key={id} value={el}>{name}</option>
             })

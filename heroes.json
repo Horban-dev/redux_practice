@@ -19,34 +19,16 @@
       "element": "water"
     },
     {
-      "id": "8b9cc175-702c-4275-977d-bb5911300777",
-      "name": "asd",
-      "description": "asd",
-      "element": "fire"
-    },
-    {
-      "id": "6572b0e2-9f79-403b-8f10-3b3b9d342af7",
-      "name": "xzc",
-      "description": "zZx",
-      "element": "water"
-    },
-    {
-      "id": "d30b0f13-62d7-48bb-8325-3fa09d035553",
-      "name": "cxz",
-      "description": "cxv",
-      "element": "earth"
-    },
-    {
-      "id": "5dab1b95-dd36-4c81-8556-9e3e2cee0131",
-      "name": "aS",
-      "description": "SAD",
-      "element": "fire"
-    },
-    {
       "id": "8f029659-9d7c-40a9-a4b3-f7cc2d493d1b",
       "name": "dsfvc",
       "description": "cvcvxeqw",
       "element": "wind"
+    },
+    {
+      "id": "e746382b-1c27-42f5-802d-ddc0c4f0cd9a",
+      "name": "asd",
+      "description": "asd",
+      "element": "fire"
     }
   ],
   "filters": [

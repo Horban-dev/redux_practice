@@ -5,7 +5,7 @@ import { filtersFetching, filtersFetched, filtersFetchingError, activeFilterChan
 import Spinner from '../spinner/Spinner';
 import classNames from 'classnames';
 const HeroesFilters = () => {
-    const {filters, filtersLoadingStatus, activeFilter} = useSelector(state => state)
+    const {filters, filtersLoadingStatus, activeFilter} = useSelector(state => state.filters)
     const dispatch = useDispatch();
     const {request} = useHttp();
 
@@ -26,7 +26,7 @@ const HeroesFilters = () => {
     const rend = (arr) => {
         if(arr.length === 0) {
             return (
-                <h3>Filters not found</h3>
+                <h5 className="text-center mt-5">Filters not found</h5>
             )
         }
         return arr.map(({el, name, clas }) => {
