@@ -1,34 +1,28 @@
 {
   "heroes": [
     {
-      "id": "037d720e-1e0e-481a-8db4-d3ef9e9f2953",
-      "name": "fg",
-      "description": "fgh",
-      "element": "water"
-    },
-    {
-      "id": "037d720e-1e0e-481a-8db4-d3ef9e9f2953",
-      "name": "fg",
-      "description": "fgh",
-      "element": "water"
-    },
-    {
-      "id": "037d720e-1e0e-481a-8db4-d3ef9e9f2953",
-      "name": "fg",
-      "description": "fgh",
-      "element": "water"
-    },
-    {
       "id": "8f029659-9d7c-40a9-a4b3-f7cc2d493d1b",
       "name": "dsfvc",
       "description": "cvcvxeqw",
       "element": "wind"
     },
     {
-      "id": "e746382b-1c27-42f5-802d-ddc0c4f0cd9a",
+      "id": "42b52192-83df-45f4-acb3-5460dfc0ea4b",
+      "name": "dsf",
+      "description": "sdf",
+      "element": "earth"
+    },
+    {
+      "id": "66e59164-f470-43a3-acfc-3923f6da75c5",
+      "name": "d",
+      "description": "d",
+      "element": "fire"
+    },
+    {
+      "id": "6ab56365-7203-43d9-81d1-a9bfb08b44ab",
       "name": "asd",
       "description": "asd",
-      "element": "fire"
+      "element": "water"
     }
   ],
   "filters": [

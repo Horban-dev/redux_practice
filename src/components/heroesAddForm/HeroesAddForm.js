@@ -1,9 +1,10 @@
 
 import {useHttp} from '../../hooks/http.hook';
 import { useDispatch, useSelector } from 'react-redux';
-import { addHeroes, filtersFetched } from '../../actions';
 import { v4 as uuidv4 } from 'uuid';
 import { useEffect, useState } from 'react';
+import { addHeroes } from '../heroesList/heroesSlice';
+import { filtersFetched } from '../heroesFilters/filtersSlice';
 
 
 
