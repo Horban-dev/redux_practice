@@ -7,12 +7,6 @@
       "element": "wind"
     },
     {
-      "id": "42b52192-83df-45f4-acb3-5460dfc0ea4b",
-      "name": "dsf",
-      "description": "sdf",
-      "element": "earth"
-    },
-    {
       "id": "66e59164-f470-43a3-acfc-3923f6da75c5",
       "name": "d",
       "description": "d",
@@ -23,6 +17,12 @@
       "name": "asd",
       "description": "asd",
       "element": "water"
+    },
+    {
+      "id": "d78fff4d-2218-464e-acd1-d7629c82a0f8",
+      "name": "d",
+      "description": "d",
+      "element": "wind"
     }
   ],
   "filters": [
