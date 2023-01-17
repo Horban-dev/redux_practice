@@ -2,18 +2,18 @@
 import {useHttp} from '../../hooks/http.hook';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { addHeroes } from '../heroesList/heroesSlice';
-import { filtersFetched } from '../heroesFilters/filtersSlice';
-
+import { selectAll } from '../heroesFilters/filtersSlice';
+import store from '../../store';
 
 
 const HeroesAddForm = () => {
-    const {filters, filtersLoadingStatus} = useSelector(state => state.filters)
-    const dispatch = useDispatch();
+    const {filtersLoadingStatus} = useSelector(state => state.filters);
+    const filters = selectAll(store.getState());
+    const dispatch = useDispatch(); 
     const {request} = useHttp();
   
-
     const [name, setName] = useState('')
     const [description, setDescription] = useState('')
     const [elementt, setElement] = useState('')
@@ -35,13 +35,6 @@ const HeroesAddForm = () => {
         setElement('')
     }
 
-    useEffect(() => {
-        request("http://localhost:3001/filters")
-            .then(data => dispatch(filtersFetched(data)))
-            .catch(error => console.log(error))
-
-        // eslint-disable-next-line
-    }, []);
 
     const elements = (filters, status) => {
         if (status === "loading") {
