@@ -58,5 +58,5 @@ export const {
     heroesFetched,
     heroesFetchingError,
     heroesDelet,
-    addHeroes
+    addHeroes,
 } = actions;

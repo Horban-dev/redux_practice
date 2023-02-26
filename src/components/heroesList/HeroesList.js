@@ -11,6 +11,7 @@ import {
 import './heroList.scss'
 
 
+
 const HeroesList = () => {
     const filteredHeroes = useSelector(filteredHeroesSelector)
     const heroesLoadingStatus = useSelector(state => state.heroesLoadingStatus);
@@ -21,7 +22,7 @@ const HeroesList = () => {
         dispatch(fetchHeroes());
         // eslint-disable-next-line
     }, []);
-  
+   
     const onDelet = useCallback((id) => {
         request(`http://localhost:3001/heroes/${id}`, 'DELETE', )
             .then(dispatch(heroesDelet(id)))
