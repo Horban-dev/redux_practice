@@ -30,7 +30,7 @@ const heroesSlice = createSlice({
         .addCase(fetchHeroes.pending, state => {state.heroesLoadingStatus = 'loading'})
         .addCase(fetchHeroes.fulfilled, (state, action) => {
             state.heroesLoadingStatus = 'idle';
-            heroesAdapter.setAll(state, action.payload) // берем state и добавляем все что пришло с сервера(ac.pay)
+            heroesAdapter.setAll(state, action.payload) 
         })
         .addCase(fetchHeroes.rejected, state => {
             state.heroesLoadingStatus = 'error'

@@ -1,3 +1,4 @@
+import React from 'react'
 import {useHttp} from '../../hooks/http.hook';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, } from 'react';
@@ -5,6 +6,7 @@ import Spinner from '../spinner/Spinner';
 import classNames from 'classnames';
 import store from '../../store';
 import { activeFilterChanged, fetchFilters, selectAll } from './filtersSlice';
+
 const HeroesFilters = () => {
     const {filtersLoadingStatus, activeFilter} = useSelector(state => state.filters)
     const filters = selectAll(store.getState())
